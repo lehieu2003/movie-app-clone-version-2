@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+
 // Services
 import { getPopular } from 'services/MovieApi'
 // Interfaces
