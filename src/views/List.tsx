@@ -1,8 +1,8 @@
 import { useMemo, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 // Stores
-// import { useAppSelector } from 'stores/Hooks'
-// import { getMenuActive } from 'stores/MovieSlice'
+import { useAppSelector } from 'stores/Hooks'
+import { getMenuActive } from 'stores/MovieSlice'
 // Services
 import {
   getPopular,
@@ -24,7 +24,7 @@ const Movie = () => {
   // Variables
   const apiKey: string = import.meta.env.VITE_API_KEY
   const urlParams = useParams()
-  // const menuActive: string = useAppSelector(getMenuActive)
+  const menuActive: string = useAppSelector(getMenuActive)
   const [firstLoad, setFirsLoad] = useState<boolean>(true)
   const [isLoading, setIsLoading] = useState<boolean>(true)
   const [isUSeTypeMenu, setIsUseTypeMenu] = useState<boolean>(false)
@@ -119,7 +119,7 @@ const Movie = () => {
               >
                 <MovieCard
                   movie={movie}
-                  // menuActive={menuActive}
+                  menuActive={menuActive}
                 />
               </div>
             )
