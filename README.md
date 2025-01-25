@@ -1,7 +1,7 @@
 <h1 align="center">Movie Application</h1>
 
 <p align="center">
-  <a href="movie-app-clone-version-2.vercel.app">DEMO</a>
+  <a href="movie-app-clone-version-2.vercel.app/">DEMO</a>
 </p>
 
 <br>
